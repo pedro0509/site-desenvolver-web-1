@@ -1,0 +1,100 @@
+:root {
+    --color-background: #141414;
+    --color-text-primary: #FFFFFF;
+    --color-text-main: #AAA;
+    --color-text-button: #141414;
+    --color-background-button:#FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-background);
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text-primary);
+}
+
+header .container {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    /* coloca o menu ao lado da logo */
+    align-items: center;
+    /* alinhamento do meno ao centro do container */
+    justify-content: space-between;
+    /* adiciona um espaço entre a logo e o container */
+}
+
+header nav {
+    margin-right: 2%;
+}
+
+.logo {
+    max-width: 168px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    /* Remove o sublinhado do link dos menus */
+    margin-right: 10px;
+    color: var(--color-text-main);
+}
+
+header nav a:hover {
+    color: var(--color-text-primary);
+}
+
+/* estilos referente ao filme principal, main */
+.main-movie {
+    font-size: 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)100%), url('/src/img/capa-house.jpg');
+    height: 80vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .description {
+    margin-bottom: 1%;
+}
+
+.main-movie .title-movie {
+    font-size: 4rem;
+}
+
+.main-movie .container {
+    width: 70%;
+    margin-left: 2%;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0.50);
+    border: none;
+    color: var(--color-text-primary);
+    padding: 15px 30px;
+    margin-left: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.button:houver {
+    background-color: var(--color-background-button);
+    color: var(--color-text-button);
+}
+
+.button i{
+    margin-right: 8px;
+}
+
+.carousel-movie {
+    margin-top: 5px;
+}
